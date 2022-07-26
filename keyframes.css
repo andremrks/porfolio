@@ -1,0 +1,25 @@
+
+@keyframes text_reveal {
+    100% {
+        color: #64ffda;
+    }
+}
+
+@keyframes text_reveal_name {
+    100% {
+        color: gold;
+        font-weight: 700;
+    }
+    
+}
+
+@keyframes text_reveal_box {
+    50% {
+        width: 100%;
+        left: 0;
+    }
+    100% {
+        width: 0;
+        left: 100%;
+    }
+}
