@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-    
+<html lang="pt-br">    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,10 +18,10 @@
             <a href="#header"><img src="./images/Icone André.png" class="logo" alt="logo" width="45px" height="45px"></a>
             <button id="btn-mobile"><span id="menu-icon"></span></button>
             <ul id="menu">
-                <li><a href="#sobre-mim">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#portfolio">Projects</a></li>
-                <li><a href="#contacts">Contacts</a></li>
+                <li><a href="#sobre-mim" onclick="openMenu();">About</a></li>
+                <li><a href="#experience" onclick="openMenu();">Experience</a></li>
+                <li><a href="#portfolio" onclick="openMenu();">Projects</a></li>
+                <li><a href="#contacts" onclick="openMenu();">Contacts</a></li>
             </ul>
         </nav>
     </header>
@@ -33,7 +32,6 @@
                 <h1>Hi!<span></span></h1>
                 <h1>my name is<span></span></h1>
                 <h1>André Marques<span></span></h1>
-                <!--<a href="#portfolio" type="button" class="portfolio-button">Portfólio</a>-->
             </main>
         </div>
     </section>
@@ -68,7 +66,7 @@
             <div class="all-experience">
                 <div class="experience-item">
                     <div class="experience-info">
-                        <p>I'm studiyng languages since December 2021 without ever having done it before, i started with Python and i really liked it, but it was in Front-end that i found my passion.</p>
+                        <p>I'm studiyng programming languages since December 2021 without ever having done it before, i started with Python and i really liked it, but it was in Front-end that i found my passion.</p>
                         <p>Since i was a kid i liked to build or to fixed stuff and see the results. The possibilities that i saw with Front-end makes me feel this feeling again, so since May 2022 i'm working as It Consultant, and i'm just starting!</p>
                     </div>
                 </div>
@@ -79,7 +77,7 @@
     <section id="portfolio">
         <div class="portfolio container">
             <div class="portfolio header">
-                <h1 class="section-title"><span>Projects</span></h1>
+                <h1 class="portfolio-title"><span>Projects</span></h1>
             </div>
             <div class="all-projects">
                 <div class="project-item">
@@ -131,6 +129,7 @@
     </section>
 
     <section id="contacts">
+        </div>
         <div class="cards">
             <a href="mailto:andrelcm89pt@gmail.com" target="_blank"><i class="fa-regular fa-envelope-open"></i></a>
         </div>    
@@ -141,8 +140,7 @@
             <a href="https://www.linkedin.com/in/andr%C3%A9-marques-858865230/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
         </div>
         <div class="cards">
-            <a href="https://www.instagram.com/andremrks/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-        </div>
+            <a href="https://www.instagram.com/andremrks/" target="_blank"><i class="fa-brands fa-instagram"></i></a>   
     </section>
 
     <footer id="footer">
