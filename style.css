@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;700;900&display=swap');
+@import "https://unpkg.com/open-props";
 
 * {
     padding: 0;
@@ -17,6 +18,10 @@ a {
     text-decoration: none;
 }
 
+section {
+    opacity: 1;
+}
+
 #presentation, #portfolio img {
     height: 100%;
     width: 100%;
@@ -30,17 +35,6 @@ p {
     font-weight: 300;
     letter-spacing: 0.02rem;
     word-spacing: 0.08rem;
-}
-
-.section-title {
-    font-size: 4rem;
-    font-weight: 900;
-    color: gold;
-    margin-bottom: 0;
-    margin-top: 0;
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
-    text-align: center;
 }
 
 /* Nav-Menu-Section */
@@ -173,7 +167,7 @@ ul {
 
 /* Sobre-Mim-Section */
 
-.sobre-mim-title, .experience-title {
+.sobre-mim-title, .experience-title, .portfolio-title {
     font-size: 4rem;
     font-weight: 900;
     color: gold;
@@ -253,18 +247,20 @@ ul {
 }
 
 #sobre-mim img {
-    border-radius: 10px;
+    border-radius: var(--radius-blob-4);
     border: 1px solid #64ffda;
     object-fit: cover;
     height: 80%;
     width: 100%;
     display: block;
-    transition: .5s ease;
+    transition: .5s var(--ease-elastic-3);
+    opacity: 0.5;
     filter: grayscale(100%);
 }
 
 #sobre-mim img:hover {
     transform: scale(0.98);
+    opacity: 1;
     filter: grayscale(0);
 }
 
@@ -479,11 +475,11 @@ opacity: 0.7;
     justify-content: center;
     min-height: 100vh;
     color: #64ffda;
+    overflow-x: hidden;
 }
 
 #contacts .cards {
     padding: 60px;
-
 }
 
 /*Scrollbar*/
