@@ -15,7 +15,7 @@
 
     <header id="header">
         <nav id="nav">
-            <a href="#header"><img src="./images/Icone André.png" class="logo" alt="logo" width="45px" height="45px"></a>
+            <a href="#header" onclick="openMenu();"><img src="./images/Icone André.png" class="logo" alt="logo" width="45px" height="45px"></a>
             <button id="btn-mobile"><span id="menu-icon"></span></button>
             <ul id="menu">
                 <li><a href="#sobre-mim" onclick="openMenu();">About</a></li>
@@ -82,6 +82,17 @@
             <div class="all-projects">
                 <div class="project-item">
                     <div class="project-info">
+                        <h1>Landing Page</h1>
+                        <h2>HTML <span>33.4%</span> | CSS <span>62.5%</span> | JavaScript <span>4.1%</span></h2>
+                        <p>A landing page from a fictional coffee shop that i created. It's simple but i like it :)</p>
+                        <p>The Project: <a href="https://andremrks.github.io/premium-house/" target="_blank">Tasty Restaurant</a></p>
+                    </div>
+                    <div class="project-img">
+                        <img src="./images/premium-coffee.png" alt="img">
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-info">
                         <h1>Tasty Restaurant</h1>
                         <h2>HTML <span>48.8%</span> | CSS <span>48.6%</span> | JavaScript <span>2.6%</span></h2>
                         <p>I was having some difficulties to understanding flexbox and positions in css so on this page based on another page I saw on youtube, i developed while looking for these properties that I had doubts. Again, it was based on another project that i saw, but i tried to do it by myself alwats that i could. Now I'm trying to create something from zero, it's been a challenge but I'm working on it!</p>
@@ -115,17 +126,6 @@
                 </div>
                 <div class="project-item">
                     <div class="project-info">
-                        <h1>Google Glass website</h1>
-                        <h2>HTML <span>69.8%</span> | CSS <span>29.9%</span> | JavaScript <span>0.3%</span></h2>
-                        <p>This is my first project, wich i did following my first course on web languages, when I saw for the first time what HTML, CSS and JavaScript are. A bit outdated site, on a subject not very popular in the moment (because the course is a little old) but that's what made me really love about  development world, and also to introducing me to the term "Front-end", wich i found what I really like to do :)</p>
-                        <p>The Project: <a href="https://andremrks.github.io/site-glass/" target="_blank">Website Glass</a></p>
-                    </div>
-                    <div class="project-img">
-                        <img src="./images/site-glass.png">
-                    </div>
-                </div>
-                <div class="project-item">
-                    <div class="project-info">
                         <h1>Sales Control</h1>
                         <h2>HTML <span>30.8%</span> | CSS <span>20.0%</span> | JavaScript <span>49.2%</span></h2>
                         <p>In this project I didn't worry so much about CSS to focus on HTML tables but mainly, about JavaScript syntax, where I created some functions that add calculations to these HTML tables, where the controller can add the necessary amount of products according to your need. It is also possible to extract this table in .xlsx format. This is possible, because I used an existing code to do this function, this code was developed by Linways Technologies and can be viewed <a href="https://github.com/linways/table-to-excel" target="_blank">here.</a></p>
@@ -135,23 +135,38 @@
                         <img src="./images/pizzaria.png" alt="img">
                     </div>
                 </div>
+                <div class="project-item">
+                    <div class="project-info">
+                        <h1>Google Glass website</h1>
+                        <h2>HTML <span>69.8%</span> | CSS <span>29.9%</span> | JavaScript <span>0.3%</span></h2>
+                        <p>This is my first project, wich i did following my first course on web languages, when I saw for the first time what HTML, CSS and JavaScript are. A bit outdated site, on a subject not very popular in the moment (because the course is a little old) but that's what made me really love about  development world, and also to introducing me to the term "Front-end", wich i found what I really like to do :)</p>
+                        <p>The Project: <a href="https://andremrks.github.io/site-glass/" target="_blank">Website Glass</a></p>
+                    </div>
+                    <div class="project-img">
+                        <img src="./images/site-glass.png">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="contacts">
+        <div class="contacts header">
+            <h1 class="contacts-title"><span>Contacts</span></h1>
         </div>
-        <div class="cards">
-            <a href="mailto:andrelcm89pt@gmail.com" target="_blank"><i class="fa-regular fa-envelope-open"></i></a>
-        </div>    
-        <div class="cards">
-            <a href="https://github.com/andremrks" target="_blank"><i class="fa-brands fa-github"></i></a>
-        </div>
-        <div class="cards">
-            <a href="https://www.linkedin.com/in/andr%C3%A9-marques-858865230/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-        </div>
-        <div class="cards">
-            <a href="https://www.instagram.com/andremrks/" target="_blank"><i class="fa-brands fa-instagram"></i></a>   
+        <div class="contactsContent">
+            <div class="cards">
+                <a href="mailto:andrelcm89pt@gmail.com" target="_blank"><i class="fa-regular fa-envelope-open"></i></a>
+            </div>    
+            <div class="cards">
+                <a href="https://github.com/andremrks" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <div class="cards">
+                <a href="https://www.linkedin.com/in/andr%C3%A9-marques-858865230/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <div class="cards">
+                <a href="https://www.instagram.com/andremrks/" target="_blank"><i class="fa-brands fa-instagram"></i></a> 
+        </div>  
     </section>
 
     <footer id="footer">
