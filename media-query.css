@@ -19,13 +19,13 @@
 }
 
 @media only screen and (max-width: 768px) {
-    #contacts {
+    .contactsContent {
         flex-direction: column;
         width: 100%;
-        margin-bottom: 100px;
+        margin: 100px 0;
     }
     #contacts .cards{
-        padding: 40px;
+        padding: 30px;
     }
 }
 
