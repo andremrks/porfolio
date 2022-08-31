@@ -1,5 +1,6 @@
 
 @media only screen and (min-width: 768px) {
+
     #portfolio .project-item {
         flex-direction: row;
         height: 400px;
@@ -16,20 +17,7 @@
     #portfolio .project-item:nth-child(even) {
         flex-direction: row-reverse;
     }
-}
 
-@media only screen and (max-width: 768px) {
-    .contactsContent {
-        flex-direction: column;
-        width: 100%;
-        margin: 100px 0;
-    }
-    #contacts .cards{
-        padding: 30px;
-    }
-}
-
-@media only screen and (min-width: 768px) {
     #sobre-mim .sobre-mim-item {
         flex-direction: row;
         height: 550px;
@@ -45,6 +33,34 @@
 }
 
 @media only screen and (max-width: 768px) {
+    #sobre-mim .header h1 {
+        margin: 0;
+    }
+
+    #portfolio .header h1 {
+        margin: 0;
+    }
+
+    #portfolio .project-info {
+        padding: 0 30px 5px;
+    }
+    #sobre-mim .sobre-mim-info {
+        padding: 0px 30px 10px;
+    }    
+    #nav {
+        padding: 0 20px;
+    }
+
+    .contactsContent {
+        flex-direction: column;
+        width: 100%;
+        margin: 100px 0 0;
+    }
+
+    #contacts .cards{
+        padding: 30px;
+    }
+
     #menu {
         display: block;
         position: absolute;
