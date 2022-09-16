@@ -23,3 +23,12 @@ window.addEventListener('scroll', function() {
     }
     lastScrollTop = scrollTop;
 })
+
+/*Function to reveal section when scroll*/
+
+window.sr = ScrollReveal({ reset:true});
+ScrollReveal({ distance: '15px' });
+sr.reveal('#sobre-mim', {duration : 2500, origin: 'bottom'});
+sr.reveal('#experience', {duration : 2500, origin: 'bottom'});
+sr.reveal('#portfolio', {duration : 2500,  origin: 'bottom'});
+sr.reveal('#contacts', {duration : 2500,  origin: 'bottom'});
