@@ -63,6 +63,10 @@ nav {
     z-index: 5000;
 }
 
+#nav a img {
+    filter: drop-shadow(2px 2px 15px #64ffda);
+}
+
 ul {
     margin: 0;
     padding: 0;
