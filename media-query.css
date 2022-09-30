@@ -52,7 +52,7 @@
     }
 
     .contactsContent {
-        min-width: 100vw;
+        width: 100%;
     }
 
     #contacts .contactsContent .cards{
