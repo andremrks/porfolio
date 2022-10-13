@@ -2,6 +2,7 @@
 @import "https://unpkg.com/open-props";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
 
 * {
     padding: 0;
@@ -426,30 +427,22 @@ opacity: 0.7;
     transform: scale(1.1);
 }
 
-/* Footer-Section*/
+/* Footer Section */
 
-#footer {
+.footer {
     text-align: center;
+    padding: 15px;
 }
 
-.topo-button {
-    display: inline-block;
-    padding: 8px 16px;
+.footer .footer-content p {
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #64ffda;
+}
+
+.footer .footer-content p a {
     color: gold;
-    background-color: transparent;
-    border: 2px solid gold;
-    font-size: 1.8rem;
-    text-transform: uppercase;
-    letter-spacing: .1rem;
-    margin: 15px;
-    transition: 0.5s ease;
-    border-radius: 25px;
-}
-
-.topo-button:hover {
-    background-color: gold;
-    color: #ffffff;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    font-weight: 600;
 }
 
 /* Contacts-Section */
@@ -520,4 +513,40 @@ opacity: 0.7;
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #64ffdb74; 
+}
+
+/* To top Button */
+
+.top-btn {
+    visibility: hidden;
+}
+
+.top-btn a {
+    color: gold;
+}
+
+.top-btn.fadeIn a {
+    font-family: 'Cabin', sans-serif;
+    visibility: visible;
+    position: fixed;
+    right: 35px;
+    bottom: 35px;
+    padding-top: 10px;
+    font-size: 2.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #64ffdb8e;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    box-shadow: 3px 3px 10px rgba(32, 31, 36, .2); 
+    opacity: 0.9;  
+    animation: fadeIn 1.2s;
+    transition: .2s ease-in-out;
+}
+
+.top-btn.fadeIn a:hover {
+    opacity: 0.65;
 }

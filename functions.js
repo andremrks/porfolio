@@ -1,14 +1,13 @@
 /*Function to show mobile menu*/
 
-const btnMobile = document.getElementById('btn-mobile');
+let btnMobile = document.getElementById('btn-mobile');
+
+btnMobile.addEventListener('click', openMenu);
 
 function openMenu() {
     const nav = document.getElementById('nav');
     nav.classList.toggle('active');
 }
-
-btnMobile.addEventListener('click', openMenu);
-
 
 /*Function to show nav-menu when scroll up*/
 
@@ -22,7 +21,7 @@ window.addEventListener('scroll', function() {
         nav.style.top = '0';
     }
     lastScrollTop = scrollTop;
-})
+});
 
 /*Function to reveal section when scroll*/
 
@@ -32,3 +31,11 @@ sr.reveal('#sobre-mim', {duration : 2500, origin: 'bottom'});
 sr.reveal('#experience', {duration : 2500, origin: 'bottom'});
 sr.reveal('#portfolio', {duration : 2500,  origin: 'bottom'});
 sr.reveal('#contacts', {duration : 2500,  origin: 'bottom'});
+
+
+/* Function to show button to top*/ 
+
+window.addEventListener('scroll', function(){
+    const toTop = document.querySelector('.top-btn');
+    toTop.classList.toggle("fadeIn", window.scrollY > 120);
+});
