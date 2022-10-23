@@ -462,35 +462,28 @@ opacity: 0.7;
 
 .cards a {
     font-size: 9rem;
-    background-image: linear-gradient(to right,#ccd6f6,#ccd6f6 40%,#64ffda 60%);
-    background-size: 200% 100%;
-    background-position: -100%;
-    display: inline-block;
-    padding: 5px 0;
-    position: relative;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: all 0.4s ease-in-out;
+    color: #64ffda;
 }
-  
-.cards a:before {
+
+.cards a::after{
     content: '';
-    background: #ccd6f6;
+    height: 1.6px;
+    width: 0%;
+    background-color: #ccd6f6;
     display: block;
-    position: absolute;
-    bottom: -3px;
-    left: 0;
-    width: 0;
-    height: 3px;
-    transition: all 0.4s ease-in-out;
+    transition: .5s ease-in-out;
 }
+
+.cards a:hover::after{
+    content: '';
+    height: 1.6px;
+    width: 100%;
+    background-color: #ccd6f6;
+    display: block;
+}  
   
 .cards a:hover {
-   background-position: 0;
-}
-  
-.cards a:hover::before {
-    width:100%;
+    animation: colored .5s forwards;
 }
 
 #contacts .cards {

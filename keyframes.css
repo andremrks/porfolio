@@ -23,3 +23,13 @@
         left: 100%;
     }
 }
+
+@keyframes colored {
+    0% {
+        color: #64ffda;
+    }
+
+    100% {
+        color: #ccd6f6;
+    }
+}
