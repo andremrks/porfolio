@@ -39,3 +39,25 @@ window.addEventListener('scroll', function(){
     const toTop = document.querySelector('.top-btn');
     toTop.classList.toggle("fadeIn", window.scrollY > 120);
 });
+
+
+
+
+/*const i = 0;
+
+    const tag = document.getElementById("text");
+    const html = document.getElementById("text").innerHTML;
+    const attr = tag.setAttribute("data", html);
+    const txt = tag.getAttribute("data");
+    const speed = 170;
+
+    function typeWriter() {
+      if (i <= txt.length) {
+        document.getElementById("text").innerHTML = txt.slice(0 , i + 1);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+        //console.log(document.getElementById("text").innerHTML);
+    }
+
+typeWriter();

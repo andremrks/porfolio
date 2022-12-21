@@ -33,6 +33,30 @@
 }
 
 @media only screen and (max-width: 768px) {
+
+    #main {
+        overflow: hidden;
+    }
+
+    #main h1 {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 3rem;
+        animation: none;
+        width: 100vw;
+        border: none;
+        
+        color: transparent;
+        position: relative;
+        color: #64ffda;
+        letter-spacing: .5rem;
+        overflow: hidden;
+        border-right: .1em solid #64ffda;
+        width: 0;
+        animation: typing 1.5s steps(20, end) forwards, blink .8s infinite;
+        white-space: nowrap;
+    }
+
     #sobre-mim .header h1 {
         margin: 0;
     }
@@ -136,3 +160,22 @@
         font-size: 1rem;
     }
 }
+
+
+@keyframes typing {
+    from { 
+        width: 0 
+    }
+    to { 
+        width: 100% 
+    }
+  }
+
+  @keyframes blink {
+    from { 
+        border-color: transparent 
+    }
+    to { 
+        border-color: #64ffda; 
+    }
+  }
