@@ -42,14 +42,14 @@ window.addEventListener('scroll', function(){
 
 
 
+/* Function simulation typing */
+var i = 0;
 
-/*const i = 0;
-
-    const tag = document.getElementById("text");
-    const html = document.getElementById("text").innerHTML;
-    const attr = tag.setAttribute("data", html);
-    const txt = tag.getAttribute("data");
-    const speed = 170;
+    var tag = document.getElementById("text");
+    var html = document.getElementById("text").innerHTML;
+    var attr = tag.setAttribute("data", html);
+    var txt = tag.getAttribute("data");
+    var speed = 80;
 
     function typeWriter() {
       if (i <= txt.length) {
@@ -57,7 +57,6 @@ window.addEventListener('scroll', function(){
         i++;
         setTimeout(typeWriter, speed);
       }
-        //console.log(document.getElementById("text").innerHTML);
     }
 
 typeWriter();

@@ -134,24 +134,23 @@ ul {
     z-index: 1;
 }
 
-#main {
-    display: inline-block;
-}
 
 #presentation h1 {
-    display: block;
-    padding: 5px;
-    font-size: 6.5rem;
-    color: transparent;
-    position: relative;
-    color: #64ffda;
-    word-spacing: 1rem;
-    letter-spacing: .5rem;
     overflow: hidden;
-    border-right: .1em solid #64ffda;
-    width: 0;
-    animation: typing 1.5s steps(20, end) forwards, blink .8s infinite;
-    white-space: nowrap;
+    margin: 0 auto;
+    display: inline-block;
+    font-size: 6.5rem;
+    color: #64ffda;  
+}
+
+#presentation h1:after{
+    content: '';
+    display: inline-block;
+    background-color: #64ffda;
+    margin-left: 2px;
+    height: 7.5rem;
+    width: 4px;
+    animation: cursor 0.4s infinite;
 }
 
 #presentation h1 span {

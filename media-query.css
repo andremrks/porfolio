@@ -45,16 +45,11 @@
         animation: none;
         width: 100vw;
         border: none;
-        
-        color: transparent;
-        position: relative;
-        color: #64ffda;
-        letter-spacing: .5rem;
-        overflow: hidden;
-        border-right: .1em solid #64ffda;
-        width: 0;
-        animation: typing 1.5s steps(20, end) forwards, blink .8s infinite;
-        white-space: nowrap;
+    }
+
+    #presentation h1:after{
+        content: '';
+        height: 4rem;
     }
 
     #sobre-mim .header h1 {
