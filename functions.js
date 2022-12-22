@@ -43,6 +43,7 @@ window.addEventListener('scroll', function(){
 
 
 /* Function simulation typing */
+
 var i = 0;
 
     var tag = document.getElementById("text");
