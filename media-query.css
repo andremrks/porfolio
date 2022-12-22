@@ -34,17 +34,12 @@
 
 @media only screen and (max-width: 768px) {
 
-    #main {
-        overflow: hidden;
-    }
 
-    #main h1 {
-        display: flex;
-        flex-wrap: wrap;
+    #presentation h1 {
+        margin-left: 2rem;
+        overflow: hidden;   
         font-size: 3rem;
-        animation: none;
         width: 100vw;
-        border: none;
     }
 
     #presentation h1:after{
