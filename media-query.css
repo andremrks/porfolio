@@ -130,6 +130,11 @@
         transition: .3s;
         position: relative;
     }
+
+    #nav.active #menu {
+        animation: scale-up-tr 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    }
+
     #nav.active #menu-icon {
         border-top-color: transparent;
     }
