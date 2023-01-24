@@ -1,3 +1,16 @@
+/*Function to reveal section when scroll*/
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show')
+        } else {
+            entry.target.classList.remove('show')
+        }
+    })
+})
+
 /*Function to show mobile menu*/
 
 let btnMobile = document.getElementById('btn-mobile');
@@ -23,14 +36,8 @@ window.addEventListener('scroll', function() {
     lastScrollTop = scrollTop;
 });
 
-/*Function to reveal section when scroll*/
-
-window.sr = ScrollReveal({ reset:true});
-ScrollReveal({ distance: '15px' });
-sr.reveal('#sobre-mim', {duration : 2500, origin: 'bottom'});
-sr.reveal('#experience', {duration : 2500, origin: 'bottom'});
-sr.reveal('#portfolio', {duration : 2500,  origin: 'bottom'});
-sr.reveal('#contacts', {duration : 2500,  origin: 'bottom'});
+const hiddenElements = document.querySelectorAll('.hidden')
+hiddenElements.forEach((el) => observer.observe(el))
 
 
 /* Function to show button to top*/ 
